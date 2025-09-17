@@ -20,7 +20,13 @@
     .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
     header{position:sticky;top:0;background:rgba(246,246,246,.9);backdrop-filter:saturate(150%) blur(8px);border-bottom:1px solid #eaeaea;z-index:50}
     .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-    .brand{font-weight:800;letter-spacing:.3px}
+    .brand {
+  display: flex;
+  align-items: center;  
+  gap: 8px;             
+  font-weight: 800;
+  letter-spacing: .3px;
+}
     .menu{display:flex;gap:18px}
     .menu a{color:var(--ink)}
     .hero{padding:72px 0;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
@@ -48,6 +54,7 @@
   height: 40px;
   object-fit: contain;
   border-radius: 50%; 
+  display: block;
 }
     .tags{display:flex;gap:8px;flex-wrap:wrap}
     .tag{font-size:12px;background:#eef2ff;color:#3730a3;padding:4px 8px;border-radius:999px;border:1px solid #e5e7eb}
