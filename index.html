@@ -34,7 +34,14 @@
     .muted{color:var(--muted)}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .card{background:var(--card);border:1px solid #eee;border-radius:var(--radius-sm);box-shadow:var(--shadow);padding:16px;display:flex;flex-direction:column;gap:10px}
-    .card img{width:100%;height:160px;object-fit:cover;border-radius:12px;border:1px solid #eee}
+    .card img{
+  width:100%;
+  height:auto;        /* deixa a imagem crescer mantendo proporção */
+  object-fit:contain; /* mostra o mapa inteiro */
+  border-radius:12px;
+  border:1px solid #eee;
+  display:block;
+      }
     .tags{display:flex;gap:8px;flex-wrap:wrap}
     .tag{font-size:12px;background:#eef2ff;color:#3730a3;padding:4px 8px;border-radius:999px;border:1px solid #e5e7eb}
     .item{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px dashed #e6e6e6}
